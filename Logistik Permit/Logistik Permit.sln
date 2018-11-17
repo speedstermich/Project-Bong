@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2042
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logistik Permit", "Logistik Permit\Logistik Permit.csproj", "{DFFBCFBA-A4DA-4886-B9FE-9CC8E63A9B4B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DFFBCFBA-A4DA-4886-B9FE-9CC8E63A9B4B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DFFBCFBA-A4DA-4886-B9FE-9CC8E63A9B4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DFFBCFBA-A4DA-4886-B9FE-9CC8E63A9B4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DFFBCFBA-A4DA-4886-B9FE-9CC8E63A9B4B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BE7A6081-C55E-4F58-AFE0-80B49B1F49ED}
+	EndGlobalSection
+EndGlobal

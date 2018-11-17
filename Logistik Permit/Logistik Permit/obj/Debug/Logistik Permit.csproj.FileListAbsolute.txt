@@ -1,0 +1,27 @@
+C:\Users\Michael\Desktop\Project\Logistik Permit\Logistik Permit\bin\Debug\logistik-permit.mdf
+C:\Users\Michael\Desktop\Project\Logistik Permit\Logistik Permit\bin\Debug\logistik-permit_log.ldf
+C:\Users\Michael\Desktop\Project\Logistik Permit\Logistik Permit\bin\Debug\Logistik Permit.exe.config
+C:\Users\Michael\Desktop\Project\Logistik Permit\Logistik Permit\bin\Debug\Logistik Permit.exe
+C:\Users\Michael\Desktop\Project\Logistik Permit\Logistik Permit\bin\Debug\Logistik Permit.pdb
+C:\Users\Michael\Desktop\Project\Logistik Permit\Logistik Permit\obj\Debug\Logistik Permit.csprojAssemblyReference.cache
+C:\Users\Michael\Desktop\Project\Logistik Permit\Logistik Permit\obj\Debug\Logistik_Permit.Form1.resources
+C:\Users\Michael\Desktop\Project\Logistik Permit\Logistik Permit\obj\Debug\Logistik_Permit.Properties.Resources.resources
+C:\Users\Michael\Desktop\Project\Logistik Permit\Logistik Permit\obj\Debug\Logistik Permit.csproj.GenerateResource.cache
+C:\Users\Michael\Desktop\Project\Logistik Permit\Logistik Permit\obj\Debug\Logistik Permit.csproj.CoreCompileInputs.cache
+C:\Users\Michael\Desktop\Project\Logistik Permit\Logistik Permit\obj\Debug\Logistik Permit.exe
+C:\Users\Michael\Desktop\Project\Logistik Permit\Logistik Permit\obj\Debug\Logistik Permit.pdb
+H:\MyProject\Logistik Permit\Logistik Permit\bin\Debug\logistik-permit.mdf
+H:\MyProject\Logistik Permit\Logistik Permit\bin\Debug\logistik-permit_log.ldf
+H:\MyProject\Logistik Permit\Logistik Permit\bin\Debug\Logistik Permit.exe.config
+H:\MyProject\Logistik Permit\Logistik Permit\bin\Debug\Logistik Permit.exe
+H:\MyProject\Logistik Permit\Logistik Permit\bin\Debug\Logistik Permit.pdb
+H:\MyProject\Logistik Permit\Logistik Permit\obj\Debug\Logistik Permit.csprojAssemblyReference.cache
+H:\MyProject\Logistik Permit\Logistik Permit\obj\Debug\Logistik_Permit.daftar_logistik.resources
+H:\MyProject\Logistik Permit\Logistik Permit\obj\Debug\Logistik_Permit.input_logistik.resources
+H:\MyProject\Logistik Permit\Logistik Permit\obj\Debug\Logistik_Permit.login.resources
+H:\MyProject\Logistik Permit\Logistik Permit\obj\Debug\Logistik_Permit.main_page.resources
+H:\MyProject\Logistik Permit\Logistik Permit\obj\Debug\Logistik_Permit.Properties.Resources.resources
+H:\MyProject\Logistik Permit\Logistik Permit\obj\Debug\Logistik Permit.csproj.GenerateResource.cache
+H:\MyProject\Logistik Permit\Logistik Permit\obj\Debug\Logistik Permit.csproj.CoreCompileInputs.cache
+H:\MyProject\Logistik Permit\Logistik Permit\obj\Debug\Logistik Permit.exe
+H:\MyProject\Logistik Permit\Logistik Permit\obj\Debug\Logistik Permit.pdb
