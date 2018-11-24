@@ -16,5 +16,15 @@ namespace Logistik_Permit
 		{
 			InitializeComponent();
 		}
+
+		private void batal_Click(object sender, EventArgs e)
+		{
+			this.Close();
+		}
+
+		private void tambah_logistik_Click(object sender, EventArgs e)
+		{
+			
+		}
 	}
 }

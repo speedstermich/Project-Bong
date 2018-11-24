@@ -55,12 +55,14 @@
 			// 
 			// tambah_logistik
 			// 
+			this.tambah_logistik.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.tambah_logistik.Location = new System.Drawing.Point(16, 357);
 			this.tambah_logistik.Name = "tambah_logistik";
 			this.tambah_logistik.Size = new System.Drawing.Size(117, 49);
 			this.tambah_logistik.TabIndex = 2;
 			this.tambah_logistik.Text = "Add";
 			this.tambah_logistik.UseVisualStyleBackColor = true;
+			this.tambah_logistik.Click += new System.EventHandler(this.tambah_logistik_Click);
 			// 
 			// hapus_data
 			// 
@@ -79,6 +81,7 @@
 			this.batal.TabIndex = 4;
 			this.batal.Text = "Cancel";
 			this.batal.UseVisualStyleBackColor = true;
+			this.batal.Click += new System.EventHandler(this.batal_Click);
 			// 
 			// daftar_logistik
 			// 
