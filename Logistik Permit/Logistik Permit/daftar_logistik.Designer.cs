@@ -66,6 +66,7 @@
 			// 
 			// hapus_data
 			// 
+			this.hapus_data.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.hapus_data.Location = new System.Drawing.Point(176, 357);
 			this.hapus_data.Name = "hapus_data";
 			this.hapus_data.Size = new System.Drawing.Size(117, 49);
@@ -75,6 +76,7 @@
 			// 
 			// batal
 			// 
+			this.batal.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.batal.Location = new System.Drawing.Point(671, 357);
 			this.batal.Name = "batal";
 			this.batal.Size = new System.Drawing.Size(117, 49);

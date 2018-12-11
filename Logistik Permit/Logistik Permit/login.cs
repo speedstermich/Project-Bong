@@ -23,5 +23,12 @@ namespace Logistik_Permit
 		{
 			this.Close();
 		}
+
+		private void button1_Click(object sender, EventArgs e)
+		{
+			this.Hide();
+			daftar_logistik form = new daftar_logistik();
+			form.Show();	
+		}
 	}
 }

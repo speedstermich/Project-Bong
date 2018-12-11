@@ -24,7 +24,8 @@ namespace Logistik_Permit
 
 		private void tambah_logistik_Click(object sender, EventArgs e)
 		{
-			
+			input_logistik form = new input_logistik();
+			form.ShowDialog();
 		}
 	}
 }

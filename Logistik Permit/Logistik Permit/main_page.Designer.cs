@@ -37,15 +37,16 @@
 			// label1
 			// 
 			this.label1.AutoSize = true;
-			this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label1.Location = new System.Drawing.Point(272, 58);
+			this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label1.Location = new System.Drawing.Point(260, 79);
 			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(265, 25);
+			this.label1.Size = new System.Drawing.Size(297, 29);
 			this.label1.TabIndex = 0;
 			this.label1.Text = "Permit Logistik Application";
 			// 
 			// logistik
 			// 
+			this.logistik.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.logistik.Location = new System.Drawing.Point(94, 256);
 			this.logistik.Name = "logistik";
 			this.logistik.Size = new System.Drawing.Size(160, 60);
@@ -55,6 +56,7 @@
 			// 
 			// peminjam
 			// 
+			this.peminjam.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.peminjam.Location = new System.Drawing.Point(326, 256);
 			this.peminjam.Name = "peminjam";
 			this.peminjam.Size = new System.Drawing.Size(160, 60);

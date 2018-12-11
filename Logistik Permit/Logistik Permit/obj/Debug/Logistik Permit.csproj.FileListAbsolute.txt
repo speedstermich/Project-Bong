@@ -25,3 +25,18 @@ H:\MyProject\Logistik Permit\Logistik Permit\obj\Debug\Logistik Permit.csproj.Ge
 H:\MyProject\Logistik Permit\Logistik Permit\obj\Debug\Logistik Permit.csproj.CoreCompileInputs.cache
 H:\MyProject\Logistik Permit\Logistik Permit\obj\Debug\Logistik Permit.exe
 H:\MyProject\Logistik Permit\Logistik Permit\obj\Debug\Logistik Permit.pdb
+H:\GitHub\Project-Bong\Logistik Permit\Logistik Permit\bin\Debug\logistik-permit.mdf
+H:\GitHub\Project-Bong\Logistik Permit\Logistik Permit\bin\Debug\logistik-permit_log.ldf
+H:\GitHub\Project-Bong\Logistik Permit\Logistik Permit\bin\Debug\Logistik Permit.exe.config
+H:\GitHub\Project-Bong\Logistik Permit\Logistik Permit\bin\Debug\Logistik Permit.exe
+H:\GitHub\Project-Bong\Logistik Permit\Logistik Permit\bin\Debug\Logistik Permit.pdb
+H:\GitHub\Project-Bong\Logistik Permit\Logistik Permit\obj\Debug\Logistik Permit.csprojAssemblyReference.cache
+H:\GitHub\Project-Bong\Logistik Permit\Logistik Permit\obj\Debug\Logistik_Permit.daftar_logistik.resources
+H:\GitHub\Project-Bong\Logistik Permit\Logistik Permit\obj\Debug\Logistik_Permit.input_logistik.resources
+H:\GitHub\Project-Bong\Logistik Permit\Logistik Permit\obj\Debug\Logistik_Permit.login.resources
+H:\GitHub\Project-Bong\Logistik Permit\Logistik Permit\obj\Debug\Logistik_Permit.main_page.resources
+H:\GitHub\Project-Bong\Logistik Permit\Logistik Permit\obj\Debug\Logistik_Permit.Properties.Resources.resources
+H:\GitHub\Project-Bong\Logistik Permit\Logistik Permit\obj\Debug\Logistik Permit.csproj.GenerateResource.cache
+H:\GitHub\Project-Bong\Logistik Permit\Logistik Permit\obj\Debug\Logistik Permit.csproj.CoreCompileInputs.cache
+H:\GitHub\Project-Bong\Logistik Permit\Logistik Permit\obj\Debug\Logistik Permit.exe
+H:\GitHub\Project-Bong\Logistik Permit\Logistik Permit\obj\Debug\Logistik Permit.pdb
