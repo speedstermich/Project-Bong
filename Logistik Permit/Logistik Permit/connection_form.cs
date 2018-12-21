@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace Logistik_Permit
 {
-	public partial class input_logistik : Form
+	public partial class connection_form : Form
 	{
-		public input_logistik()
+		public connection_form()
 		{
 			InitializeComponent();
+		}
+
+		private void button1_Click(object sender, EventArgs e)
+		{
+			connection.GetConnection();
 		}
 	}
 }

@@ -31,8 +31,6 @@ H:\GitHub\Project-Bong\Logistik Permit\Logistik Permit\bin\Debug\Logistik Permit
 H:\GitHub\Project-Bong\Logistik Permit\Logistik Permit\bin\Debug\Logistik Permit.exe
 H:\GitHub\Project-Bong\Logistik Permit\Logistik Permit\bin\Debug\Logistik Permit.pdb
 H:\GitHub\Project-Bong\Logistik Permit\Logistik Permit\obj\Debug\Logistik Permit.csprojAssemblyReference.cache
-H:\GitHub\Project-Bong\Logistik Permit\Logistik Permit\obj\Debug\Logistik_Permit.daftar_logistik.resources
-H:\GitHub\Project-Bong\Logistik Permit\Logistik Permit\obj\Debug\Logistik_Permit.input_logistik.resources
 H:\GitHub\Project-Bong\Logistik Permit\Logistik Permit\obj\Debug\Logistik_Permit.login.resources
 H:\GitHub\Project-Bong\Logistik Permit\Logistik Permit\obj\Debug\Logistik_Permit.main_page.resources
 H:\GitHub\Project-Bong\Logistik Permit\Logistik Permit\obj\Debug\Logistik_Permit.Properties.Resources.resources
@@ -40,3 +38,13 @@ H:\GitHub\Project-Bong\Logistik Permit\Logistik Permit\obj\Debug\Logistik Permit
 H:\GitHub\Project-Bong\Logistik Permit\Logistik Permit\obj\Debug\Logistik Permit.csproj.CoreCompileInputs.cache
 H:\GitHub\Project-Bong\Logistik Permit\Logistik Permit\obj\Debug\Logistik Permit.exe
 H:\GitHub\Project-Bong\Logistik Permit\Logistik Permit\obj\Debug\Logistik Permit.pdb
+H:\GitHub\Project-Bong\Logistik Permit\Logistik Permit\obj\Debug\Logistik_Permit.delete_list.resources
+H:\GitHub\Project-Bong\Logistik Permit\Logistik Permit\obj\Debug\Logistik_Permit.input_logistic.resources
+H:\GitHub\Project-Bong\Logistik Permit\Logistik Permit\obj\Debug\Logistik_Permit.add_user.resources
+H:\GitHub\Project-Bong\Logistik Permit\Logistik Permit\obj\Debug\Logistik_Permit.borrow_form.resources
+H:\GitHub\Project-Bong\Logistik Permit\Logistik Permit\obj\Debug\Logistik_Permit.check.resources
+H:\GitHub\Project-Bong\Logistik Permit\Logistik Permit\obj\Debug\Logistik_Permit.delete_borrower.resources
+H:\GitHub\Project-Bong\Logistik Permit\Logistik Permit\obj\Debug\Logistik_Permit.input_borrower.resources
+H:\GitHub\Project-Bong\Logistik Permit\Logistik Permit\obj\Debug\Logistik_Permit.connection_form.resources
+H:\GitHub\Project-Bong\Logistik Permit\Logistik Permit\obj\Debug\Logistik_Permit.list_logistic.resources
+H:\GitHub\Project-Bong\Logistik Permit\Logistik Permit\obj\Debug\Logistik_Permit.borrower.resources

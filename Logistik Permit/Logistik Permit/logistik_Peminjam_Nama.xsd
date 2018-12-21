@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="logistik_Peminjam_Nama" targetNamespace="http://tempuri.org/logistik_Peminjam_Nama.xsd" xmlns:mstns="http://tempuri.org/logistik_Peminjam_Nama.xsd" xmlns="http://tempuri.org/logistik_Peminjam_Nama.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="logistik_permitConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="logistik_permitConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Logistik_Permit.Properties.Settings.GlobalReference.Default.logistik_permitConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="peminjamTableAdapter" GeneratorDataComponentClassName="peminjamTableAdapter" Name="peminjam" UserDataComponentName="peminjamTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="logistik_permitConnectionString (Settings)" DbObjectName="dbo.peminjam" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Nama FROM dbo.peminjam</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Nama" DataSetColumn="Nama" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="logistik_Peminjam_Nama" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="logistik_Peminjam_Nama" msprop:Generator_UserDSName="logistik_Peminjam_Nama">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="peminjam" msprop:Generator_TableClassName="peminjamDataTable" msprop:Generator_TableVarName="tablepeminjam" msprop:Generator_TablePropName="peminjam" msprop:Generator_RowDeletingName="peminjamRowDeleting" msprop:Generator_RowChangingName="peminjamRowChanging" msprop:Generator_RowEvHandlerName="peminjamRowChangeEventHandler" msprop:Generator_RowDeletedName="peminjamRowDeleted" msprop:Generator_UserTableName="peminjam" msprop:Generator_RowChangedName="peminjamRowChanged" msprop:Generator_RowEvArgName="peminjamRowChangeEvent" msprop:Generator_RowClassName="peminjamRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Nama" msprop:Generator_ColumnVarNameInTable="columnNama" msprop:Generator_ColumnPropNameInRow="Nama" msprop:Generator_ColumnPropNameInTable="NamaColumn" msprop:Generator_UserColumnName="Nama">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

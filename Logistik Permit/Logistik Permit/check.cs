@@ -10,22 +10,16 @@ using System.Windows.Forms;
 
 namespace Logistik_Permit
 {
-	public partial class daftar_logistik : Form
+	public partial class check : Form
 	{
-		public daftar_logistik()
+		public check()
 		{
 			InitializeComponent();
 		}
 
-		private void batal_Click(object sender, EventArgs e)
+		private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
 		{
-			this.Close();
-		}
 
-		private void tambah_logistik_Click(object sender, EventArgs e)
-		{
-			input_logistik form = new input_logistik();
-			form.ShowDialog();
 		}
 	}
 }

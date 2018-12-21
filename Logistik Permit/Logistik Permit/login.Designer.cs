@@ -31,8 +31,8 @@
 			this.password = new System.Windows.Forms.Label();
 			this.username_txt = new System.Windows.Forms.TextBox();
 			this.password_txt = new System.Windows.Forms.TextBox();
-			this.button1 = new System.Windows.Forms.Button();
-			this.button2 = new System.Windows.Forms.Button();
+			this.login_btn = new System.Windows.Forms.Button();
+			this.cancel_btn = new System.Windows.Forms.Button();
 			this.username = new System.Windows.Forms.Label();
 			this.groupBox1 = new System.Windows.Forms.GroupBox();
 			this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -69,27 +69,27 @@
 			this.password_txt.Size = new System.Drawing.Size(193, 29);
 			this.password_txt.TabIndex = 3;
 			// 
-			// button1
+			// login_btn
 			// 
-			this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.button1.Location = new System.Drawing.Point(245, 168);
-			this.button1.Name = "button1";
-			this.button1.Size = new System.Drawing.Size(122, 44);
-			this.button1.TabIndex = 4;
-			this.button1.Text = "Login";
-			this.button1.UseVisualStyleBackColor = true;
-			this.button1.Click += new System.EventHandler(this.button1_Click);
+			this.login_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.login_btn.Location = new System.Drawing.Point(46, 168);
+			this.login_btn.Name = "login_btn";
+			this.login_btn.Size = new System.Drawing.Size(122, 44);
+			this.login_btn.TabIndex = 4;
+			this.login_btn.Text = "Login";
+			this.login_btn.UseVisualStyleBackColor = true;
+			this.login_btn.Click += new System.EventHandler(this.button1_Click);
 			// 
-			// button2
+			// cancel_btn
 			// 
-			this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.button2.Location = new System.Drawing.Point(46, 168);
-			this.button2.Name = "button2";
-			this.button2.Size = new System.Drawing.Size(122, 44);
-			this.button2.TabIndex = 5;
-			this.button2.Text = "Cancel";
-			this.button2.UseVisualStyleBackColor = true;
-			this.button2.Click += new System.EventHandler(this.button2_Click);
+			this.cancel_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.cancel_btn.Location = new System.Drawing.Point(245, 168);
+			this.cancel_btn.Name = "cancel_btn";
+			this.cancel_btn.Size = new System.Drawing.Size(122, 44);
+			this.cancel_btn.TabIndex = 5;
+			this.cancel_btn.Text = "Cancel";
+			this.cancel_btn.UseVisualStyleBackColor = true;
+			this.cancel_btn.Click += new System.EventHandler(this.button2_Click);
 			// 
 			// username
 			// 
@@ -106,9 +106,9 @@
 			// 
 			this.groupBox1.Controls.Add(this.username);
 			this.groupBox1.Controls.Add(this.password);
-			this.groupBox1.Controls.Add(this.button2);
+			this.groupBox1.Controls.Add(this.cancel_btn);
 			this.groupBox1.Controls.Add(this.username_txt);
-			this.groupBox1.Controls.Add(this.button1);
+			this.groupBox1.Controls.Add(this.login_btn);
 			this.groupBox1.Controls.Add(this.password_txt);
 			this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.groupBox1.Location = new System.Drawing.Point(378, 138);
@@ -126,6 +126,7 @@
 			this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
 			this.pictureBox1.TabIndex = 8;
 			this.pictureBox1.TabStop = false;
+			this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
 			// 
 			// label1
 			// 
@@ -133,9 +134,9 @@
 			this.label1.Font = new System.Drawing.Font("Stencil", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.label1.Location = new System.Drawing.Point(113, 48);
 			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(535, 57);
+			this.label1.Size = new System.Drawing.Size(528, 57);
 			this.label1.TabIndex = 9;
-			this.label1.Text = "Permit Logistik APP";
+			this.label1.Text = "Permit Logistic APP";
 			// 
 			// login
 			// 
@@ -147,6 +148,7 @@
 			this.Controls.Add(this.groupBox1);
 			this.Name = "login";
 			this.Text = "Permit Logistik";
+			this.Load += new System.EventHandler(this.login_Load);
 			this.groupBox1.ResumeLayout(false);
 			this.groupBox1.PerformLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -159,8 +161,8 @@
 		private System.Windows.Forms.Label password;
 		private System.Windows.Forms.TextBox username_txt;
 		private System.Windows.Forms.TextBox password_txt;
-		private System.Windows.Forms.Button button1;
-		private System.Windows.Forms.Button button2;
+		private System.Windows.Forms.Button login_btn;
+		private System.Windows.Forms.Button cancel_btn;
 		private System.Windows.Forms.Label username;
 		private System.Windows.Forms.GroupBox groupBox1;
 		private System.Windows.Forms.PictureBox pictureBox1;

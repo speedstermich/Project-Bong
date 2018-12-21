@@ -59,23 +59,82 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="daftar_logistik.cs">
+    <Compile Include="add_user.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="daftar_logistik.Designer.cs">
-      <DependentUpon>daftar_logistik.cs</DependentUpon>
+    <Compile Include="add_user.Designer.cs">
+      <DependentUpon>add_user.cs</DependentUpon>
     </Compile>
-    <Compile Include="input_logistik.cs">
+    <Compile Include="borrower.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="input_logistik.Designer.cs">
-      <DependentUpon>input_logistik.cs</DependentUpon>
+    <Compile Include="borrower.Designer.cs">
+      <DependentUpon>borrower.cs</DependentUpon>
+    </Compile>
+    <Compile Include="borrow_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="borrow_form.Designer.cs">
+      <DependentUpon>borrow_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="check.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="check.Designer.cs">
+      <DependentUpon>check.cs</DependentUpon>
+    </Compile>
+    <Compile Include="connection.cs" />
+    <Compile Include="connection_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="connection_form.Designer.cs">
+      <DependentUpon>connection_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="delete_list.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="delete_list.Designer.cs">
+      <DependentUpon>delete_list.cs</DependentUpon>
+    </Compile>
+    <Compile Include="delete_borrower.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="delete_borrower.Designer.cs">
+      <DependentUpon>delete_borrower.cs</DependentUpon>
+    </Compile>
+    <Compile Include="input_borrower.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="input_borrower.Designer.cs">
+      <DependentUpon>input_borrower.cs</DependentUpon>
+    </Compile>
+    <Compile Include="list_logistic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="list_logistic.Designer.cs">
+      <DependentUpon>list_logistic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="input_logistic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="input_logistic.Designer.cs">
+      <DependentUpon>input_logistic.cs</DependentUpon>
     </Compile>
     <Compile Include="login.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="login.Designer.cs">
       <DependentUpon>login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="logistik_Peminjam_Nama.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>logistik_Peminjam_Nama.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="logistik_permitDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>logistik_permitDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="main_page.cs">
       <SubType>Form</SubType>
@@ -85,11 +144,45 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="daftar_logistik.resx">
-      <DependentUpon>daftar_logistik.cs</DependentUpon>
+    <Compile Include="_logistik_permitDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_logistik_permitDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="_logistik_permitDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_logistik_permitDataSet1.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="add_user.resx">
+      <DependentUpon>add_user.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="input_logistik.resx">
-      <DependentUpon>input_logistik.cs</DependentUpon>
+    <EmbeddedResource Include="borrower.resx">
+      <DependentUpon>borrower.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="borrow_form.resx">
+      <DependentUpon>borrow_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="check.resx">
+      <DependentUpon>check.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="connection_form.resx">
+      <DependentUpon>connection_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="delete_list.resx">
+      <DependentUpon>delete_list.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="delete_borrower.resx">
+      <DependentUpon>delete_borrower.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="input_borrower.resx">
+      <DependentUpon>input_borrower.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="list_logistic.resx">
+      <DependentUpon>list_logistic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="input_logistic.resx">
+      <DependentUpon>input_logistic.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="login.resx">
       <DependentUpon>login.cs</DependentUpon>
@@ -107,6 +200,28 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="logistik_Peminjam_Nama.xsc">
+      <DependentUpon>logistik_Peminjam_Nama.xsd</DependentUpon>
+    </None>
+    <None Include="logistik_Peminjam_Nama.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>logistik_Peminjam_Nama.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="logistik_Peminjam_Nama.xss">
+      <DependentUpon>logistik_Peminjam_Nama.xsd</DependentUpon>
+    </None>
+    <None Include="logistik_permitDataSet.xsc">
+      <DependentUpon>logistik_permitDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="logistik_permitDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>logistik_permitDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="logistik_permitDataSet.xss">
+      <DependentUpon>logistik_permitDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -116,6 +231,28 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="_logistik_permitDataSet.xsc">
+      <DependentUpon>_logistik_permitDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="_logistik_permitDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_logistik_permitDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_logistik_permitDataSet.xss">
+      <DependentUpon>_logistik_permitDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="_logistik_permitDataSet1.xsc">
+      <DependentUpon>_logistik_permitDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="_logistik_permitDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_logistik_permitDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_logistik_permitDataSet1.xss">
+      <DependentUpon>_logistik_permitDataSet1.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
