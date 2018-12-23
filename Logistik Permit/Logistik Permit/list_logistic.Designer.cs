@@ -34,10 +34,11 @@
 			this.tambah_logistik = new System.Windows.Forms.Button();
 			this.label1 = new System.Windows.Forms.Label();
 			this.dataGridView1 = new System.Windows.Forms.DataGridView();
-			this.logistik_permitDataSet = new Logistik_Permit.logistik_permitDataSet();
-			this.logistikpermitDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
 			this.logistikBindingSource = new System.Windows.Forms.BindingSource(this.components);
+			this.logistikpermitDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
+			this.logistik_permitDataSet = new Logistik_Permit.logistik_permitDataSet();
 			this.logistikTableAdapter = new Logistik_Permit.logistik_permitDataSetTableAdapters.logistikTableAdapter();
+			this.directoryEntry1 = new System.DirectoryServices.DirectoryEntry();
 			this.idlogistikDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.namaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.jenisbarangDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -46,9 +47,9 @@
 			this.keteranganDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.updatebyDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.logistik_permitDataSet)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.logistikpermitDataSetBindingSource)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.logistikBindingSource)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.logistikpermitDataSetBindingSource)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.logistik_permitDataSet)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// batal
@@ -111,21 +112,22 @@
 			this.dataGridView1.Name = "dataGridView1";
 			this.dataGridView1.Size = new System.Drawing.Size(772, 314);
 			this.dataGridView1.TabIndex = 11;
+			this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
 			// 
-			// logistik_permitDataSet
+			// logistikBindingSource
 			// 
-			this.logistik_permitDataSet.DataSetName = "logistik_permitDataSet";
-			this.logistik_permitDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+			this.logistikBindingSource.DataMember = "logistik";
+			this.logistikBindingSource.DataSource = this.logistikpermitDataSetBindingSource;
 			// 
 			// logistikpermitDataSetBindingSource
 			// 
 			this.logistikpermitDataSetBindingSource.DataSource = this.logistik_permitDataSet;
 			this.logistikpermitDataSetBindingSource.Position = 0;
 			// 
-			// logistikBindingSource
+			// logistik_permitDataSet
 			// 
-			this.logistikBindingSource.DataMember = "logistik";
-			this.logistikBindingSource.DataSource = this.logistikpermitDataSetBindingSource;
+			this.logistik_permitDataSet.DataSetName = "logistik_permitDataSet";
+			this.logistik_permitDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
 			// 
 			// logistikTableAdapter
 			// 
@@ -187,9 +189,9 @@
 			this.Text = "list_logistic";
 			this.Load += new System.EventHandler(this.list_logistic_Load_1);
 			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.logistik_permitDataSet)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.logistikpermitDataSetBindingSource)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.logistikBindingSource)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.logistikpermitDataSetBindingSource)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.logistik_permitDataSet)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -205,6 +207,7 @@
 		private logistik_permitDataSet logistik_permitDataSet;
 		private System.Windows.Forms.BindingSource logistikBindingSource;
 		private logistik_permitDataSetTableAdapters.logistikTableAdapter logistikTableAdapter;
+		private System.DirectoryServices.DirectoryEntry directoryEntry1;
 		private System.Windows.Forms.DataGridViewTextBoxColumn idlogistikDataGridViewTextBoxColumn;
 		private System.Windows.Forms.DataGridViewTextBoxColumn namaDataGridViewTextBoxColumn;
 		private System.Windows.Forms.DataGridViewTextBoxColumn jenisbarangDataGridViewTextBoxColumn;

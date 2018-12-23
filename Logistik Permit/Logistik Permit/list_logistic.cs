@@ -47,5 +47,16 @@ namespace Logistik_Permit
 			this.logistikTableAdapter.Fill(this.logistik_permitDataSet.logistik);
 
 		}
+
+		private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+		{
+
+		}
+
+		private void button1_Click(object sender, EventArgs e)
+		{
+			dataGridView1.DataSource = "logistikBindingSource";
+			dataGridView1.Refresh();
+		}
 	}
 }

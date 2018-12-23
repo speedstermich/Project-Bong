@@ -151,6 +151,7 @@
 			this.Controls.Add(this.label1);
 			this.Name = "input_borrower";
 			this.Text = "input_borrower";
+			this.Load += new System.EventHandler(this.input_borrower_Load);
 			this.ResumeLayout(false);
 			this.PerformLayout();
 

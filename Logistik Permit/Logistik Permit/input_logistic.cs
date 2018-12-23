@@ -31,7 +31,8 @@ namespace Logistik_Permit
 			}
 			else
 			{
-				string connectionstring = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=H:\\GitHub\\Project-Bong\\Logistik Permit\\Logistik Permit\\logistik-permit.mdf;Integrated Security=True";
+				string connectionstring = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\Michael\\Documents\\GitHub\\Project-Bong\\Logistik Permit\\Logistik Permit\\logistik-permit.mdf;Integrated Security=True";
+				//string connectionstring = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=H:\\GitHub\\Project-Bong\\Logistik Permit\\Logistik Permit\\logistik-permit.mdf;Integrated Security=True";
 				using (SqlConnection connection = new SqlConnection(connectionstring))
 				{
 					SqlCommand cmd = new SqlCommand("INSERT INTO logistik (Id_logistik, nama, jenis_barang, jumlah, kepemilikan, keterangan, update_by) VALUES (@Id_logistik, @nama, @jenis_barang, @jumlah, @kepemilikan, @keterangan, @update_by)");

@@ -16,7 +16,6 @@ namespace Logistik_Permit
 		{
 			InitializeComponent();
 			label2.Text = role;
-			
 		}
 
 		private void logistic_Click(object sender, EventArgs e)
@@ -42,12 +41,12 @@ namespace Logistik_Permit
 		{
 			if (label2.Text == "Client")
 			{
-				add_user.Enabled = false;
+				add_user.Visible = false;
 			}
 
 			if (label2.Text == "Admin")
 			{
-				add_user.Enabled = true;
+				add_user.Visible = true;
 			}
 		}
 
@@ -55,6 +54,19 @@ namespace Logistik_Permit
 		{
 			add_user user = new add_user();
 			user.Show();
+		}
+
+		private void check_btn_Click(object sender, EventArgs e)
+		{
+			check form = new check();
+			form.Show();
+		}
+
+		private void button1_Click(object sender, EventArgs e)
+		{
+			this.Hide();
+			login form_login = new login();
+			form_login.Show();
 		}
 	}
 }

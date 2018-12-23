@@ -28,10 +28,13 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
+			this.components = new System.ComponentModel.Container();
 			this.label5 = new System.Windows.Forms.Label();
 			this.cancel_btn = new System.Windows.Forms.Button();
-			this.check_btn = new System.Windows.Forms.Button();
+			this.update_btn = new System.Windows.Forms.Button();
 			this.list_textbox = new System.Windows.Forms.RichTextBox();
+			this.formpinjamBindingSource = new System.Windows.Forms.BindingSource(this.components);
+			this.logistik_formpinjam = new Logistik_Permit.logistik_formpinjam();
 			this.label4 = new System.Windows.Forms.Label();
 			this.label3 = new System.Windows.Forms.Label();
 			this.label2 = new System.Windows.Forms.Label();
@@ -40,6 +43,9 @@
 			this.borrowerid_textbox = new System.Windows.Forms.TextBox();
 			this.name_textbox = new System.Windows.Forms.TextBox();
 			this.textBox1 = new System.Windows.Forms.TextBox();
+			this.form_pinjamTableAdapter = new Logistik_Permit.logistik_formpinjamTableAdapters.form_pinjamTableAdapter();
+			((System.ComponentModel.ISupportInitialize)(this.formpinjamBindingSource)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.logistik_formpinjam)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// label5
@@ -61,24 +67,37 @@
 			this.cancel_btn.TabIndex = 31;
 			this.cancel_btn.Text = "Cancel";
 			this.cancel_btn.UseVisualStyleBackColor = true;
+			this.cancel_btn.Click += new System.EventHandler(this.cancel_btn_Click);
 			// 
-			// check_btn
+			// update_btn
 			// 
-			this.check_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.check_btn.Location = new System.Drawing.Point(204, 395);
-			this.check_btn.Name = "check_btn";
-			this.check_btn.Size = new System.Drawing.Size(104, 42);
-			this.check_btn.TabIndex = 30;
-			this.check_btn.Text = "Check";
-			this.check_btn.UseVisualStyleBackColor = true;
+			this.update_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.update_btn.Location = new System.Drawing.Point(203, 395);
+			this.update_btn.Name = "update_btn";
+			this.update_btn.Size = new System.Drawing.Size(104, 42);
+			this.update_btn.TabIndex = 30;
+			this.update_btn.Text = "Update";
+			this.update_btn.UseVisualStyleBackColor = true;
 			// 
 			// list_textbox
 			// 
+			this.list_textbox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.formpinjamBindingSource, "list", true));
+			this.list_textbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.list_textbox.Location = new System.Drawing.Point(204, 208);
 			this.list_textbox.Name = "list_textbox";
 			this.list_textbox.Size = new System.Drawing.Size(508, 181);
 			this.list_textbox.TabIndex = 28;
 			this.list_textbox.Text = "";
+			// 
+			// formpinjamBindingSource
+			// 
+			this.formpinjamBindingSource.DataMember = "form_pinjam";
+			this.formpinjamBindingSource.DataSource = this.logistik_formpinjam;
+			// 
+			// logistik_formpinjam
+			// 
+			this.logistik_formpinjam.DataSetName = "logistik_formpinjam";
+			this.logistik_formpinjam.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
 			// 
 			// label4
 			// 
@@ -122,6 +141,8 @@
 			// 
 			// formid_combobox
 			// 
+			this.formid_combobox.DataSource = this.formpinjamBindingSource;
+			this.formid_combobox.DisplayMember = "id_form";
 			this.formid_combobox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.formid_combobox.FormattingEnabled = true;
 			this.formid_combobox.Location = new System.Drawing.Point(204, 10);
@@ -131,6 +152,7 @@
 			// 
 			// borrowerid_textbox
 			// 
+			this.borrowerid_textbox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.formpinjamBindingSource, "id_borrower", true));
 			this.borrowerid_textbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.borrowerid_textbox.Location = new System.Drawing.Point(204, 115);
 			this.borrowerid_textbox.Name = "borrowerid_textbox";
@@ -139,6 +161,7 @@
 			// 
 			// name_textbox
 			// 
+			this.name_textbox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.formpinjamBindingSource, "name", true));
 			this.name_textbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.name_textbox.Location = new System.Drawing.Point(204, 159);
 			this.name_textbox.Name = "name_textbox";
@@ -147,11 +170,16 @@
 			// 
 			// textBox1
 			// 
+			this.textBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.formpinjamBindingSource, "date", true));
 			this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.textBox1.Location = new System.Drawing.Point(203, 60);
 			this.textBox1.Name = "textBox1";
 			this.textBox1.Size = new System.Drawing.Size(509, 29);
 			this.textBox1.TabIndex = 43;
+			// 
+			// form_pinjamTableAdapter
+			// 
+			this.form_pinjamTableAdapter.ClearBeforeFill = true;
 			// 
 			// check
 			// 
@@ -164,7 +192,7 @@
 			this.Controls.Add(this.formid_combobox);
 			this.Controls.Add(this.label5);
 			this.Controls.Add(this.cancel_btn);
-			this.Controls.Add(this.check_btn);
+			this.Controls.Add(this.update_btn);
 			this.Controls.Add(this.list_textbox);
 			this.Controls.Add(this.label4);
 			this.Controls.Add(this.label3);
@@ -172,6 +200,9 @@
 			this.Controls.Add(this.label1);
 			this.Name = "check";
 			this.Text = "check";
+			this.Load += new System.EventHandler(this.check_Load);
+			((System.ComponentModel.ISupportInitialize)(this.formpinjamBindingSource)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.logistik_formpinjam)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -180,7 +211,7 @@
 		#endregion
 		private System.Windows.Forms.Label label5;
 		private System.Windows.Forms.Button cancel_btn;
-		private System.Windows.Forms.Button check_btn;
+		private System.Windows.Forms.Button update_btn;
 		private System.Windows.Forms.RichTextBox list_textbox;
 		private System.Windows.Forms.Label label4;
 		private System.Windows.Forms.Label label3;
@@ -190,5 +221,8 @@
 		private System.Windows.Forms.TextBox borrowerid_textbox;
 		private System.Windows.Forms.TextBox name_textbox;
 		private System.Windows.Forms.TextBox textBox1;
+		private logistik_formpinjam logistik_formpinjam;
+		private System.Windows.Forms.BindingSource formpinjamBindingSource;
+		private logistik_formpinjamTableAdapters.form_pinjamTableAdapter form_pinjamTableAdapter;
 	}
 }

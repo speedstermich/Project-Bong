@@ -38,19 +38,19 @@
 			this.borrow_btn = new System.Windows.Forms.Button();
 			this.cancel_btn = new System.Windows.Forms.Button();
 			this.name_combobox = new System.Windows.Forms.ComboBox();
+			this.peminjamBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+			this._logistik_permitDataSet = new Logistik_Permit._logistik_permitDataSet();
 			this.label5 = new System.Windows.Forms.Label();
 			this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-			this.textBox1 = new System.Windows.Forms.TextBox();
+			this.id_borrower = new System.Windows.Forms.TextBox();
 			this.logistik_Peminjam_Nama = new Logistik_Permit.logistik_Peminjam_Nama();
 			this.peminjamBindingSource = new System.Windows.Forms.BindingSource(this.components);
 			this.peminjamTableAdapter = new Logistik_Permit.logistik_Peminjam_NamaTableAdapters.peminjamTableAdapter();
-			this._logistik_permitDataSet = new Logistik_Permit._logistik_permitDataSet();
-			this.peminjamBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
 			this.peminjamTableAdapter1 = new Logistik_Permit._logistik_permitDataSetTableAdapters.peminjamTableAdapter();
+			((System.ComponentModel.ISupportInitialize)(this.peminjamBindingSource1)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this._logistik_permitDataSet)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.logistik_Peminjam_Nama)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.peminjamBindingSource)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this._logistik_permitDataSet)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.peminjamBindingSource1)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// label1
@@ -95,6 +95,7 @@
 			// 
 			// list_textbox
 			// 
+			this.list_textbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.list_textbox.Location = new System.Drawing.Point(174, 211);
 			this.list_textbox.Name = "list_textbox";
 			this.list_textbox.Size = new System.Drawing.Size(508, 181);
@@ -142,6 +143,16 @@
 			this.name_combobox.Size = new System.Drawing.Size(508, 32);
 			this.name_combobox.TabIndex = 17;
 			// 
+			// peminjamBindingSource1
+			// 
+			this.peminjamBindingSource1.DataMember = "peminjam";
+			this.peminjamBindingSource1.DataSource = this._logistik_permitDataSet;
+			// 
+			// _logistik_permitDataSet
+			// 
+			this._logistik_permitDataSet.DataSetName = "_logistik_permitDataSet";
+			this._logistik_permitDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+			// 
 			// label5
 			// 
 			this.label5.AutoSize = true;
@@ -162,14 +173,14 @@
 			this.dateTimePicker1.Size = new System.Drawing.Size(200, 29);
 			this.dateTimePicker1.TabIndex = 19;
 			// 
-			// textBox1
+			// id_borrower
 			// 
-			this.textBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.peminjamBindingSource1, "Id_peminjam", true));
-			this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.textBox1.Location = new System.Drawing.Point(173, 118);
-			this.textBox1.Name = "textBox1";
-			this.textBox1.Size = new System.Drawing.Size(508, 29);
-			this.textBox1.TabIndex = 20;
+			this.id_borrower.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.peminjamBindingSource1, "Id_peminjam", true));
+			this.id_borrower.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.id_borrower.Location = new System.Drawing.Point(173, 118);
+			this.id_borrower.Name = "id_borrower";
+			this.id_borrower.Size = new System.Drawing.Size(508, 29);
+			this.id_borrower.TabIndex = 20;
 			// 
 			// logistik_Peminjam_Nama
 			// 
@@ -185,16 +196,6 @@
 			// 
 			this.peminjamTableAdapter.ClearBeforeFill = true;
 			// 
-			// _logistik_permitDataSet
-			// 
-			this._logistik_permitDataSet.DataSetName = "_logistik_permitDataSet";
-			this._logistik_permitDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-			// 
-			// peminjamBindingSource1
-			// 
-			this.peminjamBindingSource1.DataMember = "peminjam";
-			this.peminjamBindingSource1.DataSource = this._logistik_permitDataSet;
-			// 
 			// peminjamTableAdapter1
 			// 
 			this.peminjamTableAdapter1.ClearBeforeFill = true;
@@ -204,7 +205,7 @@
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(800, 450);
-			this.Controls.Add(this.textBox1);
+			this.Controls.Add(this.id_borrower);
 			this.Controls.Add(this.dateTimePicker1);
 			this.Controls.Add(this.label5);
 			this.Controls.Add(this.name_combobox);
@@ -219,10 +220,10 @@
 			this.Name = "borrow_form";
 			this.Text = "borrow_form";
 			this.Load += new System.EventHandler(this.borrow_form_Load);
+			((System.ComponentModel.ISupportInitialize)(this.peminjamBindingSource1)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this._logistik_permitDataSet)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.logistik_Peminjam_Nama)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.peminjamBindingSource)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this._logistik_permitDataSet)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.peminjamBindingSource1)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -241,7 +242,7 @@
 		private System.Windows.Forms.ComboBox name_combobox;
 		private System.Windows.Forms.Label label5;
 		private System.Windows.Forms.DateTimePicker dateTimePicker1;
-		private System.Windows.Forms.TextBox textBox1;
+		private System.Windows.Forms.TextBox id_borrower;
 		private logistik_Peminjam_Nama logistik_Peminjam_Nama;
 		private System.Windows.Forms.BindingSource peminjamBindingSource;
 		private logistik_Peminjam_NamaTableAdapters.peminjamTableAdapter peminjamTableAdapter;

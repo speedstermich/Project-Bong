@@ -21,5 +21,17 @@ namespace Logistik_Permit
 		{
 
 		}
+
+		private void check_Load(object sender, EventArgs e)
+		{
+			// TODO: This line of code loads data into the 'logistik_formpinjam.form_pinjam' table. You can move, or remove it, as needed.
+			this.form_pinjamTableAdapter.Fill(this.logistik_formpinjam.form_pinjam);
+
+		}
+
+		private void cancel_btn_Click(object sender, EventArgs e)
+		{
+			this.Close();
+		}
 	}
 }

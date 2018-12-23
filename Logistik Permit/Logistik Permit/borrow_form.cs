@@ -30,36 +30,37 @@ namespace Logistik_Permit
 
 		private void borrow_btn_Click(object sender, EventArgs e)
 		{
-			/*if (form_id.Text == "" || borrower_name.Text == "" || borrower_division.Text == "")
+			if (form_id.Text == "" || list_textbox.Text == "" || id_borrower.Text == "" || name_combobox.GetItemText(name_combobox.SelectedItem) == "")
 			{
 				MessageBox.Show("Data Incomplete");
 			}
 			else
 			{
-				string connectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\\logistik-permit.mdf;Integrated Security=True";
+				string connectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\Michael\\Documents\\GitHub\\Project-Bong\\Logistik Permit\\Logistik Permit\\logistik-permit.mdf;Integrated Security=True";
+				//string connectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\\logistik-permit.mdf;Integrated Security=True";
 				using (SqlConnection connection = new SqlConnection(connectionString))
 				{
-					SqlCommand cmd = new SqlCommand("INSERT INTO peminjam (Id_peminjam, Nama, Divisi, Contact) VALUES (@Id_peminjam, @Nama, @Divisi, @Contact)");
+					SqlCommand cmd = new SqlCommand("INSERT INTO form_pinjam (id_form, date, id_borrower, name, list) VALUES (@id_form, @date, @id_borrower, @name, @list)");
 					cmd.CommandType = CommandType.Text;
 					cmd.Connection = connection;
 
-					cmd.Parameters.AddWithValue("@Id_peminjam", borrower_id.Text);
-					cmd.Parameters.AddWithValue("@Nama", borrower_name.Text);
-					cmd.Parameters.AddWithValue("@Divisi", borrower_division.Text);
-					cmd.Parameters.AddWithValue("@Contact", borrower_contact.Text);
+					cmd.Parameters.AddWithValue("@id_form", form_id.Text);
+					cmd.Parameters.AddWithValue("@date", dateTimePicker1.Text);
+					cmd.Parameters.AddWithValue("@id_borrower", id_borrower.Text);
+					cmd.Parameters.AddWithValue("@name", name_combobox.GetItemText(name_combobox.SelectedItem));
+					cmd.Parameters.AddWithValue("@list", list_textbox.Text);
 
 					/*Id_peminjam = Borrower ID, nama = 名字, Divisi = 部门， Contact = 联系方式*/
-				/*connection.Open();
-				cmd.ExecuteNonQuery();
-				MessageBox.Show("Success");
-				connection.Close();
+					connection.Open();
+					cmd.ExecuteNonQuery();
+					MessageBox.Show("Success");
+					connection.Close();
 
-				borrower_id.Text = "";
-				borrower_name.Text = "";
-				borrower_division.Text = "";
-				borrower_contact.Text = "";
+					form_id.Text = "";
+					list_textbox.Text = "";
 
-			}*/
+				}
+			}
 		}
 
 		private void borrow_form_Load(object sender, EventArgs e)

@@ -48,6 +48,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -126,6 +127,11 @@
     <Compile Include="login.Designer.cs">
       <DependentUpon>login.cs</DependentUpon>
     </Compile>
+    <Compile Include="logistik_formpinjam.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>logistik_formpinjam.xsd</DependentUpon>
+    </Compile>
     <Compile Include="logistik_Peminjam_Nama.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -200,6 +206,17 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="logistik_formpinjam.xsc">
+      <DependentUpon>logistik_formpinjam.xsd</DependentUpon>
+    </None>
+    <None Include="logistik_formpinjam.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>logistik_formpinjam.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="logistik_formpinjam.xss">
+      <DependentUpon>logistik_formpinjam.xsd</DependentUpon>
+    </None>
     <None Include="logistik_Peminjam_Nama.xsc">
       <DependentUpon>logistik_Peminjam_Nama.xsd</DependentUpon>
     </None>

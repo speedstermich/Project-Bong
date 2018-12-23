@@ -31,7 +31,8 @@ namespace Logistik_Permit
 			}
 			else
 			{
-				string connectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\\logistik-permit.mdf;Integrated Security=True";
+				string connectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\Michael\\Documents\\GitHub\\Project-Bong\\Logistik Permit\\Logistik Permit\\logistik-permit.mdf;Integrated Security=True";
+				//string connectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\\logistik-permit.mdf;Integrated Security=True";
 				using (SqlConnection connection = new SqlConnection(connectionString))
 				{
 					SqlCommand cmd = new SqlCommand("Delete from [logistik] where Id_logistik = @Id_logistik");
@@ -57,7 +58,8 @@ namespace Logistik_Permit
 			}
 			else
 			{
-				string connectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\\logistik-permit.mdf;Integrated Security=True";
+				string connectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\Michael\\Documents\\GitHub\\Project-Bong\\Logistik Permit\\Logistik Permit\\logistik-permit.mdf;Integrated Security=True";
+				//string connectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\\logistik-permit.mdf;Integrated Security=True";
 				using (SqlConnection connection = new SqlConnection(connectionString))
 				{
 					SqlCommand cmd = new SqlCommand("Select Id_logistik from [logistik] where Id_logistik = @Id_logistik");
@@ -66,13 +68,14 @@ namespace Logistik_Permit
 					cmd.Parameters.AddWithValue("@Id_logistik", id_logistic.Text);
 					connection.Open();
 
-					using (SqlDataReader reader = cmd.ExecuteReader())
-					{
-						while(reader.Read())
-						{
-							name_logistic.Text = reader["nama"].ToString();
-						}
-					}
+					
+					//using (SqlDataReader reader = cmd.ExecuteReader())
+					//{
+						//while(reader.Read())
+						//{
+							//name_logistic.Text = reader["nama"].ToString();
+						//}
+					//}
 
 					cmd.ExecuteNonQuery();
 					connection.Close();
