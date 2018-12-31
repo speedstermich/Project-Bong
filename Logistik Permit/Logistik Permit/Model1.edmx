@@ -1,0 +1,212 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="form_pinjam">
+          <Key>
+            <PropertyRef Name="id_form" />
+          </Key>
+          <Property Name="id_form" Type="varchar" MaxLength="12" Nullable="false" />
+          <Property Name="date" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="id_borrower" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="name" Type="varchar" MaxLength="250" Nullable="false" />
+          <Property Name="list" Type="text" Nullable="false" />
+        </EntityType>
+        <EntityType Name="logistik">
+          <Key>
+            <PropertyRef Name="Id_logistik" />
+          </Key>
+          <Property Name="Id_logistik" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="nama " Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="jenis_barang" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="jumlah" Type="int" Nullable="false" />
+          <Property Name="kepemilikan" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="keterangan" Type="text" Nullable="false" />
+          <Property Name="update_by" Type="varchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="peminjam">
+          <Key>
+            <PropertyRef Name="Id_peminjam" />
+          </Key>
+          <Property Name="Id_peminjam" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="Nama" Type="varchar" MaxLength="250" Nullable="false" />
+          <Property Name="Divisi" Type="varchar" MaxLength="250" Nullable="false" />
+          <Property Name="Contact" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="usertbl">
+          <Key>
+            <PropertyRef Name="id_user" />
+          </Key>
+          <Property Name="id_user" Type="varchar" MaxLength="12" Nullable="false" />
+          <Property Name="username" Type="varchar" MaxLength="250" Nullable="false" />
+          <Property Name="password" Type="varchar" MaxLength="250" Nullable="false" />
+          <Property Name="role" Type="char" MaxLength="150" Nullable="false" />
+        </EntityType>
+        <Association Name="FK_form_pinjam_peminjam">
+          <End Role="peminjam" Type="Self.peminjam" Multiplicity="1" />
+          <End Role="form_pinjam" Type="Self.form_pinjam" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="peminjam">
+              <PropertyRef Name="Id_peminjam" />
+            </Principal>
+            <Dependent Role="form_pinjam">
+              <PropertyRef Name="id_borrower" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="ModelStoreContainer">
+          <EntitySet Name="form_pinjam" EntityType="Self.form_pinjam" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="logistik" EntityType="Self.logistik" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="peminjam" EntityType="Self.peminjam" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="usertbl" EntityType="Self.usertbl" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_form_pinjam_peminjam" Association="Self.FK_form_pinjam_peminjam">
+            <End Role="peminjam" EntitySet="peminjam" />
+            <End Role="form_pinjam" EntitySet="form_pinjam" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="form_pinjam">
+          <Key>
+            <PropertyRef Name="id_form" />
+          </Key>
+          <Property Name="id_form" Type="String" MaxLength="12" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="date" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="id_borrower" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="name" Type="String" MaxLength="250" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="list" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="peminjam" Relationship="Self.FK_form_pinjam_peminjam" FromRole="form_pinjam" ToRole="peminjam" />
+        </EntityType>
+        <EntityType Name="logistik">
+          <Key>
+            <PropertyRef Name="Id_logistik" />
+          </Key>
+          <Property Name="Id_logistik" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="nama" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="jenis_barang" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="jumlah" Type="Int32" Nullable="false" />
+          <Property Name="kepemilikan" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="keterangan" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="update_by" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+        </EntityType>
+        <EntityType Name="peminjam">
+          <Key>
+            <PropertyRef Name="Id_peminjam" />
+          </Key>
+          <Property Name="Id_peminjam" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Nama" Type="String" MaxLength="250" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Divisi" Type="String" MaxLength="250" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Contact" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="form_pinjam" Relationship="Self.FK_form_pinjam_peminjam" FromRole="peminjam" ToRole="form_pinjam" />
+        </EntityType>
+        <EntityType Name="usertbl">
+          <Key>
+            <PropertyRef Name="id_user" />
+          </Key>
+          <Property Name="id_user" Type="String" MaxLength="12" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="username" Type="String" MaxLength="250" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="password" Type="String" MaxLength="250" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="role" Type="String" MaxLength="150" FixedLength="true" Unicode="false" Nullable="false" />
+        </EntityType>
+        <Association Name="FK_form_pinjam_peminjam">
+          <End Role="peminjam" Type="Self.peminjam" Multiplicity="1" />
+          <End Role="form_pinjam" Type="Self.form_pinjam" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="peminjam">
+              <PropertyRef Name="Id_peminjam" />
+            </Principal>
+            <Dependent Role="form_pinjam">
+              <PropertyRef Name="id_borrower" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="Entities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="form_pinjam" EntityType="Self.form_pinjam" />
+          <EntitySet Name="logistiks" EntityType="Self.logistik" />
+          <EntitySet Name="peminjams" EntityType="Self.peminjam" />
+          <EntitySet Name="usertbls" EntityType="Self.usertbl" />
+          <AssociationSet Name="FK_form_pinjam_peminjam" Association="Self.FK_form_pinjam_peminjam">
+            <End Role="peminjam" EntitySet="peminjams" />
+            <End Role="form_pinjam" EntitySet="form_pinjam" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="ModelStoreContainer" CdmEntityContainer="Entities">
+          <EntitySetMapping Name="form_pinjam">
+            <EntityTypeMapping TypeName="Model.form_pinjam">
+              <MappingFragment StoreEntitySet="form_pinjam">
+                <ScalarProperty Name="id_form" ColumnName="id_form" />
+                <ScalarProperty Name="date" ColumnName="date" />
+                <ScalarProperty Name="id_borrower" ColumnName="id_borrower" />
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="list" ColumnName="list" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="logistiks">
+            <EntityTypeMapping TypeName="Model.logistik">
+              <MappingFragment StoreEntitySet="logistik">
+                <ScalarProperty Name="Id_logistik" ColumnName="Id_logistik" />
+                <ScalarProperty Name="nama" ColumnName="nama " />
+                <ScalarProperty Name="jenis_barang" ColumnName="jenis_barang" />
+                <ScalarProperty Name="jumlah" ColumnName="jumlah" />
+                <ScalarProperty Name="kepemilikan" ColumnName="kepemilikan" />
+                <ScalarProperty Name="keterangan" ColumnName="keterangan" />
+                <ScalarProperty Name="update_by" ColumnName="update_by" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="peminjams">
+            <EntityTypeMapping TypeName="Model.peminjam">
+              <MappingFragment StoreEntitySet="peminjam">
+                <ScalarProperty Name="Id_peminjam" ColumnName="Id_peminjam" />
+                <ScalarProperty Name="Nama" ColumnName="Nama" />
+                <ScalarProperty Name="Divisi" ColumnName="Divisi" />
+                <ScalarProperty Name="Contact" ColumnName="Contact" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="usertbls">
+            <EntityTypeMapping TypeName="Model.usertbl">
+              <MappingFragment StoreEntitySet="usertbl">
+                <ScalarProperty Name="id_user" ColumnName="id_user" />
+                <ScalarProperty Name="username" ColumnName="username" />
+                <ScalarProperty Name="password" ColumnName="password" />
+                <ScalarProperty Name="role" ColumnName="role" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

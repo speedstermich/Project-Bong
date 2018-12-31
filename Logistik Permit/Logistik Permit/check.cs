@@ -33,5 +33,10 @@ namespace Logistik_Permit
 		{
 			this.Close();
 		}
+
+		private void update_btn_Click(object sender, EventArgs e)
+		{
+
+		}
 	}
 }

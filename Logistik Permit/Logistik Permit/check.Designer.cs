@@ -78,6 +78,7 @@
 			this.update_btn.TabIndex = 30;
 			this.update_btn.Text = "Update";
 			this.update_btn.UseVisualStyleBackColor = true;
+			this.update_btn.Click += new System.EventHandler(this.update_btn_Click);
 			// 
 			// list_textbox
 			// 
